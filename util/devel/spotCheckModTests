@@ -8,6 +8,7 @@
 cd $CHPL_HOME >& /dev/null
 
 pwd
+ls -al
 git remote -v
 git branch
 git status
