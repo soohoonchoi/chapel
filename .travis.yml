@@ -24,6 +24,9 @@ matrix:
           packages:
           - cscope
 
+    - name: "spot-check modified tests"
+      env: TEST_COMMAND="./util/devel/spotCheckModTests"
+
 script:
   - (eval "$TEST_COMMAND")
 

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+#
+# either CHPL_HOME must be set or this must be run from the root chapel
+# directory
+#
+
+cd $CHPL_HOME >& /dev/null
+
+$(git diff --name-only HEAD $(git merge-base HEAD $TRAVIS_BRANCH))
+
