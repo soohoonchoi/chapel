@@ -7,5 +7,10 @@
 
 cd $CHPL_HOME >& /dev/null
 
+pwd
+git remote -v
+git branch
+git status
+
 $(git diff --name-only HEAD $(git merge-base HEAD $TRAVIS_BRANCH))
 
