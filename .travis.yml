@@ -28,3 +28,9 @@ script:
   - (eval "$TEST_COMMAND")
 
 sudo: false
+
+# safelist
+branches:
+  only:
+  - master
+  - create_travis_check
