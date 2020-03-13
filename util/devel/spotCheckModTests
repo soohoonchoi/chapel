@@ -5,7 +5,7 @@
 # directory
 #
 
-cd $CHPL_HOME >& /dev/null
+#cd $CHPL_HOME >& /dev/null
 
 pwd
 ls -al
